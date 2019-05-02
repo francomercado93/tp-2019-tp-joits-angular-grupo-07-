@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid mx-auto py-5">
   <div class="card bg-light mb-3">
     <div class="card-header">
       <h2 class="text-center">Ingrese su nombre de usuario y contraseña</h2>
@@ -11,6 +11,6 @@
         <input matInput placeholder="Contraseña" [type]="hide ? 'password' : 'text'">
         <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
       </mat-form-field>
-      <button mat-raised-button color="primary">Ingresar</button>
+      <button mat-raised-button color="primary" (click)=ingresar()>Ingresar</button>
     </div>
   </div>
