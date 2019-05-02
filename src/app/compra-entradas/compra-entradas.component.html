@@ -1,47 +1,12 @@
 <!-- TODO: Agregar un sliders para mostrar las peliculas en una sola columna -->
-<div class="container-fluid">
-  <div class="card">
-    <div class="card-body">
-      <h2>Todas las peliculas</h2>
-    </div>
+<div class="container-fluid bg-dark">
+  <!-- <div class="card bg-dark text-white"> -->
+  <!-- <div class="card-body"> -->
+  <div class="container-fluid py-4 text-white">
+    <h2>Todas las peliculas</h2>
+    <!-- </div> -->
   </div>
-  <!-- <div class="row">
-      <div class="col-sm">
-        <div class="card">
-          <button mat-button>
-            <img src="../../assets/img/dark-knight.jpg" class="card-img-top" alt="Batman 1"
-              style="width: 20rem; height: 30rem">
-          </button>
-          <div class="card-body">
-            <h5 class="card-title text-center">Batman: El caballero de la noche</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm">
-        <div class="card">
-          <button mat-button>
-            <img src="../../assets/img/the_matrix-155050517-large.jpg" class="card-img-top" alt="Matrix"
-              style="width: 20rem;height: 30rem">
-          </button>
-          <div class=" card-body">
-            <h5 class="card-title text-center">Matrix</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm">
-        <div class="card">
-          <button mat-button>
-            <img src="../../assets/img/toy-story.jpg" class="card-img-top" alt="Toy Story"
-              style="width: 20rem;height: 30rem">
-          </button>
-          <div class=" card-body">
-            <h5 class="card-title text-center">Toy Story</h5>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-  <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+  <div id="carouselIndicators" class="carousel slide bg-dark text-white" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselIndicators" data-slide-to="1"></li>
@@ -49,86 +14,60 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="row">
-          <div class="col-sm">
-            <div class="card">
-              <button mat-button>
-                <img src="../../assets/img/dark-knight.jpg" class="card-img-top" alt="Batman 1"
-                  style="width: 20rem; height: 30rem">
-              </button>
-              <div class="card-body">
-                <h5 class="card-title text-center">Batman: El caballero de la noche</h5>
-              </div>
-            </div>
+          <div class="col-sm pl-5">
+            <button mat-button (click)="openDialog()">
+              <img src="../../assets/img/dark-knight.jpg" class="rounded mx-auto d-block" alt="Batman 1"
+                style="width: 17rem; height: 25rem">
+              <h5 class="card-title text-center py-3">Batman: El caballero de la noche</h5>
+            </button>
           </div>
-          <div class="col-sm">
-            <div class="card">
-              <button mat-button>
-                <img src="../../assets/img/the_matrix-155050517-large.jpg" class="card-img-top" alt="Matrix"
-                  style="width: 20rem;height: 30rem">
-              </button>
-              <div class=" card-body">
-                <h5 class="card-title text-center">Matrix</h5>
-              </div>
-            </div>
+          <div class="col-sm pl-5">
+            <button mat-button (click)="openDialog()">
+              <img src="../../assets/img/the_matrix-155050517-large.jpg" class="rounded mx-auto d-block" alt="Matrix"
+                style="width: 17rem;height: 25rem">
+              <h5 class="card-title text-center py-3">Matrix</h5>
+            </button>
           </div>
-          <div class="col-sm">
-            <div class="card">
-              <button mat-button>
-                <img src="../../assets/img/toy-story.jpg" class="card-img-top" alt="Toy Story"
-                  style="width: 20rem;height: 30rem">
-              </button>
-              <div class=" card-body">
-                <h5 class="card-title text-center">Toy Story</h5>
-              </div>
-            </div>
+          <div class="col-sm pl-5">
+            <button mat-button (click)="openDialog()">
+              <img src="../../assets/img/toy-story.jpg" class="rounded mx-auto d-block" alt="Toy Story"
+                style="width: 17rem;height: 25rem">
+              <h5 class="card-title text-center py-3">Toy Story</h5>
+            </button>
           </div>
         </div>
       </div>
       <div class="carousel-item">
         <div class="row">
-          <div class="col-sm">
-            <div class="card">
-              <button mat-button>
-                <img src="../../assets/img/dark-knight.jpg" class="card-img-top" alt="Batman 1"
-                  style="width: 20rem; height: 30rem">
-              </button>
-              <div class="card-body">
-                <h5 class="card-title text-center">Batman: El caballero de la noche</h5>
-              </div>
-            </div>
+          <div class="col-sm ">
+            <img src="../../assets/img/dark-knight.jpg" class="rounded mx-auto d-block" alt="Batman 1"
+              style="width: 17rem; height: 25rem">
+            <h5 class="card-title text-center py-3">Batman: El caballero de la noche</h5>
           </div>
           <div class="col-sm">
-            <div class="card">
-              <button mat-button>
-                <img src="../../assets/img/the_matrix-155050517-large.jpg" class="card-img-top" alt="Matrix"
-                  style="width: 20rem;height: 30rem">
-              </button>
-              <div class=" card-body">
-                <h5 class="card-title text-center">Matrix</h5>
-              </div>
-            </div>
+            <img src="../../assets/img/the_matrix-155050517-large.jpg" class="rounded mx-auto d-block" alt="Matrix"
+              style="width: 17rem;height: 25rem">
+            <h5 class="card-title text-center py-3">Matrix</h5>
           </div>
           <div class="col-sm">
-            <div class="card">
-              <button mat-button>
-                <img src="../../assets/img/toy-story.jpg" class="card-img-top" alt="Toy Story"
-                  style="width: 20rem;height: 30rem">
-              </button>
-              <div class=" card-body">
-                <h5 class="card-title text-center">Toy Story</h5>
-              </div>
-            </div>
+            <img src="../../assets/img/toy-story.jpg" class="rounded mx-auto d-block" alt="Toy Story"
+              style="width: 17rem;height: rem">
+            <h5 class="card-title text-center py-3">Toy Story</h5>
           </div>
         </div>
       </div>
+      <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-    <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
+  <app-funciones></app-funciones>
+  <!-- <button mat-raised-button color="primary"> -->
+  <h3 class="text-center">Finalizar compra</h3>
+  <!-- </button> -->
 </div>

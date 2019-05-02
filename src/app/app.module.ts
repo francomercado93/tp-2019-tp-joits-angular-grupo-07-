@@ -13,13 +13,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { CompraEntradasComponent } from './compra-entradas/compra-entradas.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { FuncionesComponent } from './funciones/funciones.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ToolbarComponent,
-    CompraEntradasComponent
+    CompraEntradasComponent,
+    FuncionesComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +38,11 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatToolbarModule,
     MatCardModule,
     MatGridListModule,
-    AppRoutingModule
+    MatTableModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    AppRoutingModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
