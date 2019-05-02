@@ -1,58 +1,146 @@
-<!-- TODO: Agregar un sliders para mostrar las peliculas en una sola columna -->
-<div class="container-fluid bg-dark">
-  <!-- <div class="card bg-dark text-white"> -->
-  <!-- <div class="card-body"> -->
-  <div class="container-fluid py-4 text-white">
+<div class="container-fluid">
+  <div class="container-fluid py-4">
     <h2>Todas las peliculas</h2>
-    <!-- </div> -->
   </div>
-  <div id="carouselIndicators" class="carousel slide bg-dark text-white" data-ride="carousel">
+  <div id="carouselIndicators" class="carousel slide px-5" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselIndicators" data-slide-to="1"></li>
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <div class="row">
-          <div class="col-sm pl-5">
-            <button mat-button (click)="openDialog()">
-              <img src="../../assets/img/dark-knight.jpg" class="rounded mx-auto d-block" alt="Batman 1"
-                style="width: 17rem; height: 25rem">
-              <h5 class="card-title text-center py-3">Batman: El caballero de la noche</h5>
-            </button>
+        <div class="card-deck">
+          <div class="col-sm">
+            <div class="card">
+              <button mat-button>
+                <img src="../../assets/img/dark-knight.jpg" class="rounded " alt="Batman 1"
+                  style="width: 12rem; height: 19rem; align-content:center;">
+              </button>
+              <div class="card-body">
+                <h5 class="card-title text-center">El caballero de la noche</h5>
+                <ul class="list-group list-group-flush ">
+                  <li class="list-group-item">Año de lanzamiento: 2008</li>
+                  <li class="list-group-item">Puntaje: 8</li>
+                  <li class="list-group-item"> Genero: Accion</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="col-sm pl-5">
-            <button mat-button (click)="openDialog()">
-              <img src="../../assets/img/the_matrix-155050517-large.jpg" class="rounded mx-auto d-block" alt="Matrix"
-                style="width: 17rem;height: 25rem">
-              <h5 class="card-title text-center py-3">Matrix</h5>
-            </button>
+          <div class="col-sm ">
+            <div class="card">
+              <button mat-button>
+                <img src="../../assets/img/the_matrix-155050517-large.jpg" class="rounded mx-auto d-block" alt="Matrix"
+                  style="width: 12rem; height: 19rem">
+              </button>
+              <div class="card-body">
+                <h5 class="card-title text-center">Matrix</h5>
+                <ul class="list-group list-group-flush ">
+                  <li class="list-group-item">Año de lanzamiento: 2008</li>
+                  <li class="list-group-item">Puntaje: 8</li>
+                  <li class="list-group-item"> Genero: Accion</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="col-sm pl-5">
-            <button mat-button (click)="openDialog()">
-              <img src="../../assets/img/toy-story.jpg" class="rounded mx-auto d-block" alt="Toy Story"
-                style="width: 17rem;height: 25rem">
-              <h5 class="card-title text-center py-3">Toy Story</h5>
-            </button>
+          <div class="col-sm  ">
+            <div class="card">
+              <button mat-button>
+                <img src="../../assets/img/toy-story.jpg" class="rounded mx-auto d-block" alt="Toy Story"
+                  style="width: 12rem; height: 19rem">
+              </button>
+              <div class="card-body">
+                <h5 class="card-title text-center">Toy Story</h5>
+                <ul class="list-group list-group-flush ">
+                  <li class="list-group-item">Año de lanzamiento: 2008</li>
+                  <li class="list-group-item">Puntaje: 8</li>
+                  <li class="list-group-item"> Genero: Accion</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm ">
+            <div class="card">
+              <button mat-button>
+                <img src="../../assets/img/nueve-reinas.jpg" class="rounded mx-auto d-block" alt="Nueve reinas"
+                  style="width: 12rem; height: 19rem">
+              </button>
+              <div class="card-body">
+                <h5 class="card-title text-center">Nueve reinas</h5>
+                <ul class="list-group list-group-flush ">
+                  <li class="list-group-item">Año de lanzamiento: 2008</li>
+                  <li class="list-group-item">Puntaje: 8</li>
+                  <li class="list-group-item"> Genero: Accion</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <div class="row">
+        <div class="card-deck">
+          <div class="col-sm">
+            <div class="card">
+              <button mat-button>
+                <img src="../../assets/img/dark-knight.jpg" class="rounded " alt="Batman 1"
+                  style="width: 12rem; height: 19rem; align-content:center;">
+              </button>
+              <div class="card-body">
+                <h5 class="card-title text-center">El caballero de la noche</h5>
+                <ul class="list-group list-group-flush ">
+                  <li class="list-group-item">Año de lanzamiento: 2008</li>
+                  <li class="list-group-item">Puntaje: 8</li>
+                  <li class="list-group-item"> Genero: Accion</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <div class="col-sm ">
-            <img src="../../assets/img/dark-knight.jpg" class="rounded mx-auto d-block" alt="Batman 1"
-              style="width: 17rem; height: 25rem">
-            <h5 class="card-title text-center py-3">Batman: El caballero de la noche</h5>
+            <div class="card">
+              <button mat-button>
+                <img src="../../assets/img/the_matrix-155050517-large.jpg" class="rounded mx-auto d-block" alt="Matrix"
+                  style="width: 12rem; height: 19rem">
+              </button>
+              <div class="card-body">
+                <h5 class="card-title text-center">Matrix</h5>
+                <ul class="list-group list-group-flush ">
+                  <li class="list-group-item">Año de lanzamiento: 2008</li>
+                  <li class="list-group-item">Puntaje: 8</li>
+                  <li class="list-group-item"> Genero: Accion</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="col-sm">
-            <img src="../../assets/img/the_matrix-155050517-large.jpg" class="rounded mx-auto d-block" alt="Matrix"
-              style="width: 17rem;height: 25rem">
-            <h5 class="card-title text-center py-3">Matrix</h5>
+          <div class="col-sm  ">
+            <div class="card">
+              <button mat-button>
+                <img src="../../assets/img/toy-story.jpg" class="rounded mx-auto d-block" alt="Toy Story"
+                  style="width: 12rem; height: 19rem">
+              </button>
+              <div class="card-body">
+                <h5 class="card-title text-center">Toy Story</h5>
+                <ul class="list-group list-group-flush ">
+                  <li class="list-group-item">Año de lanzamiento: 2008</li>
+                  <li class="list-group-item">Puntaje: 8</li>
+                  <li class="list-group-item"> Genero: Accion</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="col-sm">
-            <img src="../../assets/img/toy-story.jpg" class="rounded mx-auto d-block" alt="Toy Story"
-              style="width: 17rem;height: rem">
-            <h5 class="card-title text-center py-3">Toy Story</h5>
+          <div class="col-sm ">
+            <div class="card">
+              <button mat-button>
+                <img src="../../assets/img/nueve-reinas.jpg" class="rounded mx-auto d-block" alt="Nueve reinas"
+                  style="width: 12rem; height: 19rem">
+              </button>
+              <div class="card-body">
+                <h5 class="card-title text-center">Nueve reinas</h5>
+                <ul class="list-group list-group-flush ">
+                  <li class="list-group-item">Año de lanzamiento: 2008</li>
+                  <li class="list-group-item">Puntaje: 8</li>
+                  <li class="list-group-item"> Genero: Accion</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -66,8 +154,78 @@
       </a>
     </div>
   </div>
-  <app-funciones></app-funciones>
-  <!-- <button mat-raised-button color="primary"> -->
-  <h3 class="text-center">Finalizar compra</h3>
-  <!-- </button> -->
+  <div class="container-fluid py-4">
+    <h2>Peliculas recomendadas </h2>
+  </div>
+  <div class="card-deck">
+    <div class="col-sm">
+      <div class="card">
+        <button mat-button>
+          <img src="../../assets/img/dark-knight.jpg" class="rounded " alt="Batman 1"
+            style="width: 12rem; height: 19rem; align-content:center;">
+        </button>
+        <div class="card-body">
+          <h5 class="card-title text-center">El caballero de la noche</h5>
+          <ul class="list-group list-group-flush ">
+            <li class="list-group-item">Año de lanzamiento: 2008</li>
+            <li class="list-group-item">Puntaje: 8</li>
+            <li class="list-group-item"> Genero: Accion</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm ">
+      <div class="card">
+        <button mat-button>
+          <img src="../../assets/img/the_matrix-155050517-large.jpg" class="rounded mx-auto d-block" alt="Matrix"
+            style="width: 12rem; height: 19rem">
+        </button>
+        <div class="card-body">
+          <h5 class="card-title text-center">Matrix</h5>
+          <ul class="list-group list-group-flush ">
+            <li class="list-group-item">Año de lanzamiento: 2008</li>
+            <li class="list-group-item">Puntaje: 8</li>
+            <li class="list-group-item"> Genero: Accion</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm  ">
+      <div class="card">
+        <button mat-button>
+          <img src="../../assets/img/toy-story.jpg" class="rounded mx-auto d-block" alt="Toy Story"
+            style="width: 12rem; height: 19rem">
+        </button>
+        <div class="card-body">
+          <h5 class="card-title text-center">Toy Story</h5>
+          <ul class="list-group list-group-flush ">
+            <li class="list-group-item">Año de lanzamiento: 2008</li>
+            <li class="list-group-item">Puntaje: 8</li>
+            <li class="list-group-item"> Genero: Accion</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm ">
+      <div class="card">
+        <button mat-button>
+          <img src="../../assets/img/nueve-reinas.jpg" class="rounded mx-auto d-block" alt="Nueve reinas"
+            style="width: 12rem; height: 19rem">
+        </button>
+        <div class="card-body">
+          <h5 class="card-title text-center">Nueve reinas</h5>
+          <ul class="list-group list-group-flush ">
+            <li class="list-group-item">Año de lanzamiento: 2008</li>
+            <li class="list-group-item">Puntaje: 8</li>
+            <li class="list-group-item"> Genero: Accion</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- <app-funciones></app-funciones> -->
+    <!-- <button mat-raised-button color="primary"> -->
+    <!-- <h3 class="text-center">Finalizar compra</h3> -->
+    <!-- </button> -->
+  </div>
 </div>
