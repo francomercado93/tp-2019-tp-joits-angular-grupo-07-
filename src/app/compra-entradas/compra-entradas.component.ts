@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { StubPeliculaService } from 'src/services/pelicula.service';
+import { Pelicula } from 'src/domain/pelicula';
 
 @Component({
   selector: 'app-compra-entradas',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompraEntradasComponent implements OnInit {
 
-  constructor() { }
+  peliculas: Array<Pelicula>
+
+  constructor(private peliculaService: StubPeliculaService) { }
 
   ngOnInit() {
+    this.peliculas = this.peliculaService.getPeliculas()
+    console.log(this.peliculas)
   }
 
 }

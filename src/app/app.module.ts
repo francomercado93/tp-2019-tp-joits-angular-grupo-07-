@@ -19,33 +19,37 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { CardPeliculaComponent } from './card-pelicula/card-pelicula.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent,
-    ToolbarComponent,
-    CompraEntradasComponent,
-    FuncionesComponent,
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatIconModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatGridListModule,
-    MatTableModule,
-    MatCheckboxModule,
-    MatRadioModule,
-    AppRoutingModule,
-    MatExpansionModule,
-    MatDialogModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+   declarations: [
+      AppComponent,
+      LoginComponent,
+      ToolbarComponent,
+      CompraEntradasComponent,
+      FuncionesComponent,
+      CardPeliculaComponent
+   ],
+   imports: [
+      BrowserModule,
+      BrowserAnimationsModule,
+      MatFormFieldModule,
+      MatInputModule,
+      MatIconModule,
+      MatButtonModule,
+      MatToolbarModule,
+      MatCardModule,
+      MatGridListModule,
+      MatTableModule,
+      MatCheckboxModule,
+      MatRadioModule,
+      AppRoutingModule,
+      MatExpansionModule,
+      MatDialogModule
+   ],
+   providers: [],
+   bootstrap: [
+      AppComponent
+   ]
 })
 export class AppModule { }
